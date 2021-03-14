@@ -1,7 +1,13 @@
 import wx
-import Frame_192410101018
+from Frame_192410101018 import FrameKholil
+
+class Identitas (FrameKholil):
+    def __init__(self, parent):
+        FrameKholil.__init__(self, parent)
+        self.SetTitle("Tugas1 PBO2C - Praktikum")
+        # self.SetIcon(wx.Icon("unej.ico"))
 
 app = wx.App()
-frame = Frame_192410101018.MyFrame1 (parent=None)
+frame = Identitas(parent=None)
 frame.Show()
 app.MainLoop()
